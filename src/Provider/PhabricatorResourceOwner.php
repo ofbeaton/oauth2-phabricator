@@ -26,7 +26,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      * @param array  $response
      */
     public function __construct(array $response = array())
-    {        
+    {
         $this->data = $response['result'];
     }
 
