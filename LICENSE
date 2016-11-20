@@ -1,6 +1,9 @@
 MIT License
 
-Copyright (c) 2016 Finlay Beaton
+Copyright (c) for portions of project oauth2-phabricator are held 
+by Steven Maguire, 2015 as part of project oauth2-github. All 
+other copyright for project oauth2-phabricator are held 
+by Finlay Beaton, 2016.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
