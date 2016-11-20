@@ -100,7 +100,7 @@ Please see [CONTRIBUTING](https://github.com/ofbeaton/oauth2-phabricator/blob/ma
 ## Credits
 
 - [Finlay Beaton](https://ofbeaton.com)
-- [Steven Maguire](https://github.com/stevenmaguire)
+- [Steven Maguire](https://github.com/stevenmaguire) (through code from [oauth2-github](https://github.com/thephpleague/oauth2-github))
 - [All Contributors](https://github.com/ofbeaton/oauth2-phabricator/contributors)
 
 
