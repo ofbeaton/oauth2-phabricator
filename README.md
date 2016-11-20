@@ -99,7 +99,7 @@ Please see [CONTRIBUTING](https://github.com/ofbeaton/oauth2-phabricator/blob/ma
 
 ## Credits
 
-- [Finlay Beaton](https://github.com/ofbeaton)
+- [Finlay Beaton](https://ofbeaton.com)
 - [Steven Maguire](https://github.com/stevenmaguire)
 - [All Contributors](https://github.com/ofbeaton/oauth2-phabricator/contributors)
 
@@ -110,6 +110,6 @@ The MIT License (MIT). Please see [License File](https://github.com/ofbeaton/oau
 
 ## Support Me
 
-Hi, I'm Finlay Beaton ([@ofbeaton](https://github.com/ofbeaton)). This software is only made possible by donations of fellow users like you, encouraging me to toil the midnight hours away and sweat into the code and documentation. Everyone's time should be valuable, please seriously consider donating.
+Hi, I'm Finlay Beaton ([@ofbeaton](https://ofbeaton.com)). This software is only made possible by donations of fellow users like you, encouraging me to toil the midnight hours away and sweat into the code and documentation. Everyone's time should be valuable, please seriously consider donating.
 
 [Paypal Donate Form](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RDWQCGL5UD6DS&lc=CA&item_name=ofbeaton&item_number=oauth-phabricator&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
