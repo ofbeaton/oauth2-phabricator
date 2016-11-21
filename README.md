@@ -49,7 +49,7 @@ $provider = new Ofbeaton\OAuth2\Client\Provider\Phabricator([
     'domain'            => '{phabricator-base-url}',
     'clientId'          => '{phabricator-client-id}',
     'clientSecret'      => '{phabricator-client-secret}',
-    'redirectUri'       => 'https://your-phabricator-install.com/callback-url',
+    'redirectUri'       => 'https://your-application.com/callback-url',
 ]);
 
 if (!isset($_GET['code'])) {
