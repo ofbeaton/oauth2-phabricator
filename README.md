@@ -20,10 +20,33 @@ composer require ofbeaton/oauth2-phabricator
 
 Usage is the same as The League's OAuth client, using `\Ofbeaton\OAuth2\Client\Provider\Phabricator` as the provider.
 
+### With oauth2-client bundles
+
+[Symfony Bundles](http://symfony.com/) like [knpuniversity's oauth2-client-bundle](https://github.com/knpuniversity/oauth2-client-bundle) or [HWIOAuthBundle](https://github.com/hwi/HWIOAuthBundle) use the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client) under the hood. 
+
+It is vital that you pass the domain for your phabricator install. For knpuniversity's oauth2-client-bundle this means in your Symfony `config.yml` you want this instead:
+
+```yml
+knpu_oauth2_client:
+   clients:
+      phabricator_oauth:
+         type: generic
+         provider_class: Ofbeaton\OAuth2\Client\Provider\Phabricator
+         
+         provider_options:
+            domain: %phab_host%
+            
+         client_id: %phab_client_id%
+         client_secret: %phab_client_secret%
+         redirect_route: connect_phabricator_check
+         redirect_params: {}                        
+```
+
 ### Authorization Code Flow
 
 ```php
 $provider = new Ofbeaton\OAuth2\Client\Provider\Phabricator([
+    'domain'            => '{phabricator-base-url}',
     'clientId'          => '{phabricator-client-id}',
     'clientSecret'      => '{phabricator-client-secret}',
     'redirectUri'       => 'https://your-phabricator-install.com/callback-url',
