@@ -43,6 +43,21 @@ class Phabricator extends AbstractProvider
     protected $domain;
 
     /**
+     * @param array $options
+     * @param array $collaborators
+     *
+     * @throws \InvalidArgumentException
+     */
+    public function __construct($options = [], array $collaborators = [])
+    {
+        parent::__construct($options, $collaborators);
+        if (empty($options['domain'])) {
+            $message = 'The "domain" option not set. Please set a domain.';
+            throw new \InvalidArgumentException($message);
+        }
+    }
+
+    /**
      * Get domain.
      *
      * @return string

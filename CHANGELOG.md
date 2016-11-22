@@ -1,6 +1,24 @@
 # Changelog
 All Notable changes to `oauth2-phabricator` will be documented in this file
 
+## 1.0.3 - 2016-04-22
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Fixed
+- No `domain` now properly raises `InvalidArgumentException`
+
+### Removed
+- Nothing
+
+### Security
+- Nothing
+
+
 ## 1.0.2 - 2016-04-22
 
 ### Added

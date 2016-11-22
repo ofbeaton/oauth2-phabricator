@@ -200,4 +200,16 @@ class PhabricatorTest extends \PHPUnit_Framework_TestCase
         $this->provider->setHttpClient($client);
         $token = $this->provider->getAccessToken('authorization_code', ['code' => 'mock_authorization_code']);
     }
+    
+    /**
+     * @expectedException \InvalidArgumentException
+     **/
+    public function testExceptionThrownWhenNoDomainProvided()
+    {
+        $this->provider = new \Ofbeaton\OAuth2\Client\Provider\Phabricator([
+            'clientId' => 'mock_client_id',
+            'clientSecret' => 'mock_secret',
+            'redirectUri' => 'none',
+        ]);    
+    }
 }
