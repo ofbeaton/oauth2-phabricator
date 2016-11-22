@@ -46,10 +46,10 @@ knpu_oauth2_client:
 
 ```php
 $provider = new Ofbeaton\OAuth2\Client\Provider\Phabricator([
-    'domain'            => '{phabricator-base-url}',
+    'domain'            => 'https://your-phabricator-install.com',
     'clientId'          => '{phabricator-client-id}',
     'clientSecret'      => '{phabricator-client-secret}',
-    'redirectUri'       => 'https://your-phabricator-install.com/callback-url',
+    'redirectUri'       => 'https://your-application.com/callback-url',
 ]);
 
 if (!isset($_GET['code'])) {
@@ -80,7 +80,7 @@ if (!isset($_GET['code'])) {
         $user = $provider->getResourceOwner($token);
 
         // Use these details to create a new profile
-        printf('Hello %s!', $user->getNickname());
+        printf('Hello %s!', $user->getRealName());
 
     } catch (Exception $e) {
 
