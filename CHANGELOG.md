@@ -18,7 +18,6 @@ All Notable changes to `oauth2-phabricator` will be documented in this file
 ### Security
 - Nothing
 
-
 ## 1.0.2 - 2016-04-22
 
 ### Added
