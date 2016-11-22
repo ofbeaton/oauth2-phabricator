@@ -28,7 +28,7 @@ class PhabricatorTest extends \PHPUnit_Framework_TestCase
     
     public function testDomain()
     {
-        $domain = $this->provider->domain;
+        $domain = $this->provider->getDomain();
 
         $this->assertEquals($this->domain, $domain);
     }
@@ -96,9 +96,6 @@ class PhabricatorTest extends \PHPUnit_Framework_TestCase
 
     public function testPhabricatorDomainUrls()
     {
-        $this->provider->domain = 'https://phabricator-'.uniqid().'.company.com';
-
-
         $response = m::mock('Psr\Http\Message\ResponseInterface');
         $response->shouldReceive('getBody')->times(1)->andReturn('access_token=mock_access_token&expires=3600&refresh_token=mock_refresh_token&otherKey={1234}');
         $response->shouldReceive('getHeader')->andReturn(['content-type' => 'application/x-www-form-urlencoded']);
@@ -110,9 +107,9 @@ class PhabricatorTest extends \PHPUnit_Framework_TestCase
 
         $token = $this->provider->getAccessToken('authorization_code', ['code' => 'mock_authorization_code']);
 
-        $this->assertEquals($this->provider->domain.'/oauthserver/auth/', $this->provider->getBaseAuthorizationUrl());
-        $this->assertEquals($this->provider->domain.'/oauthserver/token/', $this->provider->getBaseAccessTokenUrl([]));
-        $this->assertEquals($this->provider->domain.'/api/user.whoami?access_token=mock_access_token', $this->provider->getResourceOwnerDetailsUrl($token));
+        $this->assertEquals($this->domain.'/oauthserver/auth/', $this->provider->getBaseAuthorizationUrl());
+        $this->assertEquals($this->domain.'/oauthserver/token/', $this->provider->getBaseAccessTokenUrl([]));
+        $this->assertEquals($this->domain.'/api/user.whoami?access_token=mock_access_token', $this->provider->getResourceOwnerDetailsUrl($token));
     }
 
     public function testUserData()

@@ -40,7 +40,17 @@ class Phabricator extends AbstractProvider
      *
      * @var string
      */
-    public $domain;
+    protected $domain;
+
+    /**
+     * Get domain.
+     *
+     * @return string
+     */
+    public function getDomain()
+    {
+        return $this->domain;
+    }
 
     /**
      * Get authorization url to begin OAuth flow

@@ -1,6 +1,23 @@
 # Changelog
 All Notable changes to `oauth2-phabricator` will be documented in this file
 
+## 1.0.2 - 2016-04-22
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Fixed
+- #1 Made `domain` protected ([shadowhand](https://github.com/shadowhand))
+
+### Removed
+- Nothing
+
+### Security
+- Nothing
+
 ## 1.0.1 - 2016-04-22
 
 ### Added
