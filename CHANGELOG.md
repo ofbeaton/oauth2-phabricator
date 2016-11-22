@@ -10,6 +10,7 @@ All Notable changes to `oauth2-phabricator` will be documented in this file
 - Nothing
 
 ### Fixed
+- #2 Escape token in `Phabricator` (thanks [shadowhand](https://github.com/shadowhand)
 - #3 Possible `E_NOTICE` in `PhabricatorResourceOwner` (thanks [shadowhand](https://github.com/shadowhand) 
 
 ### Removed

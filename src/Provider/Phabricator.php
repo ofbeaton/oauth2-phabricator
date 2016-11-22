@@ -84,7 +84,9 @@ class Phabricator extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        $url = $this->domain.self::PATH_API_USER.'?access_token='.$token->getToken();
+        $url = $this->domain.self::PATH_API_USER.'?'.$this->buildQueryString(array(
+            'access_token' => $token->getToken(),
+        ));
         return $url;
     }
 
