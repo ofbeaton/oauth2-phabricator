@@ -3,9 +3,12 @@
 namespace Ofbeaton\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
+use League\OAuth2\Client\Tool\ArrayAccessorTrait;
 
 class PhabricatorResourceOwner implements ResourceOwnerInterface
 {
+    use ArrayAccessorTrait;
+   
     /**
      * Raw data from the response
      *
@@ -27,7 +30,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function __construct(array $response = array())
     {
-        $this->data = $response['result'];
+        $this->data = $this->getValueByKey($response, 'result', array());
     }
 
     /**
@@ -37,7 +40,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getId()
     {
-        return $this->data['phid'] ?: null;
+        return $this->getValueByKey($this->data, 'phid');
     }
 
     /**
@@ -47,7 +50,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getPhid()
     {
-        return $this->data['phid'] ?: null;
+        return $this->getValueByKey($this->data, 'phid');
     }
 
     /**
@@ -57,7 +60,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getUsername()
     {
-        return $this->data['userName'] ?: null;
+        return $this->getValueByKey($this->data, 'userName');
     }
 
     /**
@@ -67,7 +70,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getRealName()
     {
-        return $this->data['realName'] ?: null;
+        return $this->getValueByKey($this->data, 'realName');
     }
 
     /**
@@ -77,7 +80,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getImage()
     {
-        return $this->data['image'] ?: null;
+        return $this->getValueByKey($this->data, 'image');
     }
 
     /**
@@ -87,7 +90,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getUri()
     {
-        return $this->data['uri'] ?: null;
+        return $this->getValueByKey($this->data, 'uri');
     }
 
     /**
@@ -97,7 +100,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getRoles()
     {
-        return $this->data['roles'] ?: null;
+        return $this->getValueByKey($this->data, 'roles');
     }
 
     /**
@@ -107,7 +110,7 @@ class PhabricatorResourceOwner implements ResourceOwnerInterface
      */
     public function getPrimaryEmail()
     {
-        return $this->data['primaryEmail'] ?: null;
+        return $this->getValueByKey($this->data, 'primaryEmail');
     }
     
     /**
