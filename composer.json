@@ -7,12 +7,7 @@
             "name": "Finlay Beaton",
             "email": "ofbeaton@gmail.com",
             "homepage": "https://ofbeaton.com"
-        },
-        {
-            "name": "Steven Maguire",
-            "email": "stevenmaguire@gmail.com",
-            "homepage": "https://github.com/stevenmaguire"
-        },
+        },        
         {
             "name": "oauth2-phabricator Community",
             "homepage": "https://github.com/ofbeaton/oauth2-phabricator/graphs/contributors"
