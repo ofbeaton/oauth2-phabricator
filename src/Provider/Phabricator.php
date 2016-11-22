@@ -42,15 +42,6 @@ class Phabricator extends AbstractProvider
      */
     public $domain;
 
-    public function __construct(array $options, array $collaborators = array())
-    {
-        if (isset($options['domain']) === true) {
-            $this->domain = $options['domain'];
-        }
-
-        parent::__construct($options, $collaborators);
-    }
-
     /**
      * Get authorization url to begin OAuth flow
      *
