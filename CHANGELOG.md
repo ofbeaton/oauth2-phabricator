@@ -1,7 +1,24 @@
 # Changelog
 All Notable changes to `oauth2-phabricator` will be documented in this file
 
-## 1.0.3 - 2016-04-22
+## 2.0.0 - 2016-04-22
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Fixed
+- Nothing
+
+### Removed
+- Acknowledges a BC break in 1.0.2 and corrects semver. 1.0.2 and 1.0.3 as a result are now marked pre-release.
+
+### Security
+- Nothing
+
+## 1.0.3 - 2016-04-22 - Pre-release
 
 ### Added
 - Nothing
@@ -18,7 +35,7 @@ All Notable changes to `oauth2-phabricator` will be documented in this file
 ### Security
 - Nothing
 
-## 1.0.2 - 2016-04-22
+## 1.0.2 - 2016-04-22 - Pre-release
 
 ### Added
 - Nothing
@@ -71,7 +88,7 @@ All Notable changes to `oauth2-phabricator` will be documented in this file
 ### Security
 - Nothing
 
-## 0.1.0 - 2016-04-20
+## 0.1.0 - 2016-04-20 - Pre-release
 
 ### Added
 - Initial release! Based on thephpleague/oauth2-github
