@@ -8,6 +8,14 @@
 
 This package provides [Phabricator](https://www.phacility.com/) OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
+## Updates
+
+The project is considered in a usable state and feature complete.
+
+This project is used in corporate applications. As such, the authors are unlikely to update it on a regular basis, but instead when the corporate applications that use it run into problems. You should expect updates in the 5-10yr range. 
+
+Issues and PRs will be monitored, and we will continue to work with the community to provide updates as they are contributed.
+
 ## Installation
 
 To install, use composer:
@@ -131,9 +139,3 @@ Please see [CONTRIBUTING](https://github.com/ofbeaton/oauth2-phabricator/blob/ma
 ## License
 
 The MIT License (MIT). Please see [License File](https://github.com/ofbeaton/oauth2-phabricator/blob/master/LICENSE) for more information.
-
-## Support Me
-
-Hi, I'm Finlay Beaton ([@ofbeaton](https://ofbeaton.com)). This software is only made possible by donations of fellow users like you, encouraging me to toil the midnight hours away and sweat into the code and documentation. Everyone's time should be valuable, please seriously consider donating.
-
-[Paypal Donate Form](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RDWQCGL5UD6DS&lc=CA&item_name=ofbeaton&item_number=oauth-phabricator&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
