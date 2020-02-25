@@ -29,7 +29,7 @@ class Phabricator extends AbstractProvider
     const PATH_AUTHORIZE = '/oauthserver/auth/';
     
     /**
-     * habricator OAuth server token request endpoint.
+     * Phabricator OAuth server token request endpoint.
      *
      * @var string
      */
